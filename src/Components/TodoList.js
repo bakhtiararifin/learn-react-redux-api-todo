@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import TodoContainer from './TodoContainer';
 
 class TodoList extends Component {
+  componentDidMount() {
+    this.props.loadTodos()
+  }
+
   render() {
     return (
       <div className="row">

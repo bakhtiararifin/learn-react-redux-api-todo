@@ -1,7 +1,8 @@
 const todos = (state = [], action) => {
   switch (action.type) {
+    case 'SET_TODOS':
+      return action.todos
     case 'ADD_TODO':
-      console.log(action)
       return [
         ...state,
         {

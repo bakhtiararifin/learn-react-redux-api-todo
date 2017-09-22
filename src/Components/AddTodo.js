@@ -10,7 +10,6 @@ class AddTodo extends Component {
     if(this.state.todo === ''){
       alert('Todo is required');
     } else {
-      console.log(this.props.addTodo)
       this.props.addTodo(this.state.todo);
       this.setState({ todo: '' });
     }
